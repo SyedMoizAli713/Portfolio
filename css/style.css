@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: #081b29;
+    color: #ededed;
+}
+
+.logo{
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.nav-link{
+    color: #fff;
+    font-weight: 500;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.nav-pills a:hover{
+    color: #0ef;
+}
+.row{
+    justify-content: space-between;
+}
+.image{
+    width: 280px;
+    height: 280px;
+    background-image: url(../img/circular_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+    }
+    100% {
+        box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    }
+}
+.main{
+    /* border: 2px solid black; */
+    padding: 70px 10% 0;
+}
+.home-icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+}
+.home-icon a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    opacity: 0;
+    border: none;
+    animation: slideTop .5s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+.btn-box:hover{
+    box-shadow:0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,
+    0 0 100px cyan,0 0 200px cyan;
+} 
+.main h1{
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.main h3{
+    font-weight: 700;
+    opacity: 0;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: .5s;
+}
+.main p{
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+}
+.main h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+}
+.main h3 span{
+    color: #0ef;
+}
+.about-text h2{
+  animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
+}
+.about-text h4{
+  animation: slideleft 1s ease forwards;
+    animation-delay: .5s;
+}
+.about-text h2 span{
+    color: #0ef;
+}
+.about{
+    justify-content: space-between;
+}
+
+.about-img{
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/circular_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 0px solid transparent;
+    animation: glow 1.5s infinite alternate;
+}
+/* services start */
+.sub-title {
+    font-size: 36px;
+    font-weight: bold;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+  }
+  
+  .sub-title span {
+    color: #0ef !important;
+  }
+  
+  .service-card {
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    transition: transform 0.5s ease;
+    background-color: #111827;
+    color: white;
+  }
+  
+  .service-card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .read {
+    padding: 10px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #081b29;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .read:hover {
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Custom CSS for Skills Section */
+.sub-title {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 700;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+  }
+  .title h3{
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
+  }
+  .title1 h3{
+    animation: slideleft 1s ease forwards;
+    animation-delay: .5s;
+  }
+  
+  .sub-title span {
+    color: #0d6efd;
+  }
+  
+  .skill p {
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  
+  .progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+  }
+  
+  .progress-bar {
+    background-color: #0d6efd;
+  }
+  .slide-in-right {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideRight 1s ease-out forwards;
+  }
+
+  @keyframes slideRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  /* Circle Progress Styles */
+  .circle-progress {
+    display: inline-block;
+  }
+  
+  .circle-svg {
+    transform: rotate(-90deg);
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #e9ecef;
+    stroke-width: 8;
+  }
+  
+  .circle-progress-path {
+    fill: none;
+    stroke: #0d6efd;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dasharray: 0 408;
+    transition: stroke-dasharray 1s ease-in-out;
+  }
+  
+  .circle-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+/* Projects */
+.projects {
+    padding: 80px 0;
+    color: #fff;
+  }
+  .projects h2{
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+  }
+  .projects h2 span {
+    color: #0ef;
+  }
+  .card1{
+    background-image: url(../img/project.png); background-size: cover;
+  }
+  .card2{
+    background-image: url(../img/project2.png); background-size: cover;
+  }
+  .card3{
+    background-image: url(../img/project3.png); background-size: cover;
+  }
+  .project-card {
+    background-color: #111;
+    border-radius: 15px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px  #012290f7;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+  }
+  
+  .project-card h4 {
+    color: #0ef;
+    margin-bottom: 15px;
+  }
+  
+  .project-card .btn {
+    margin-top: 10px;
+    transition: 0.3s ease;
+  }
+  
+  .project-card .btn:hover {
+    box-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+  }
+  /* Certification */
+  #certificates ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  #certificates li {
+    margin-bottom: 10px;
+  }
+  .certifications h2{
+    animation: slideTop 1s ease forwards;
+    animation-delay: .5s;
+  }
+  .certifications h2 span {
+    color: #0ef !important;
+  }
+  .certifications .cer{
+    padding: 10px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #081b29;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    animation: slideTop 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .certifications .cer:hover {
+    box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan;
+  }
+  /* Certificate Images - Responsive & Uniform */
+.certificate-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  /* border: 1px solid #0ef; */
+  /* border-radius: 10px; */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.certificate-img:hover {
+  transform: scale(1.03);
+}
+
+/* Contact */
+/* Contact Section */
+.contact-section {
+  background-color: #081b29;
+  color: #fff;
+}
+
+.contact-section h2 span {
+  color: #0ef;
+}
+
+/* Contact Form Inputs */
+.contact-form input,
+.contact-form textarea {
+  background-color: transparent;
+  border: 2px solid #0ef;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0ef;
+  box-shadow: 0 0 10px #0ef;
+}
+.contact-form .btn{
+  padding: 10px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #081b29;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    animation: slideTop 1s ease forwards;
+    opacity: 0;
+}
+.contact-form .btn:hover{
+box-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan;
+}
+
+/* Animation: Slide Up */
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #0ef;
+  font-size: 28px;
+  margin: 0 10px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+
+
+
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideleft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity:1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+@keyframes slidebottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity:1;
+    }
+}
+/* Responsive height control */
+@media (max-width: 768px) {
+  .certificate-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-img {
+    height: 160px;
+  }
+}
