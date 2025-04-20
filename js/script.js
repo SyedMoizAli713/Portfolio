@@ -34,13 +34,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Script to change modal image
 
-  const certificateImgs = document.querySelectorAll(".certificate-img");
-  const modalImg = document.getElementById("modalImage");
+  // const certificateImgs = document.querySelectorAll(".certificate-img");
+  // const modalImg = document.getElementById("modalImage");
 
-  certificateImgs.forEach(img => {
-    img.addEventListener("click", function () {
-      const src = this.getAttribute("data-img");
-      modalImg.setAttribute("src", src);
-    });
+  // certificateImgs.forEach(img => {
+  //   img.addEventListener("click", function () {
+  //     const src = this.getAttribute("data-img");
+  //     modalImg.setAttribute("src", src);
+  //   });
+  // });
+
+
+const certificateImgs = document.querySelectorAll(".certificate-img");
+const modalImg = document.getElementById("modalImage");
+
+
+certificateImgs.forEach(img => {
+  img.addEventListener("click", function () {
+    const imgSrc = this.getAttribute("data-img"); 
+    modalImg.setAttribute("src", imgSrc); 
   });
+});
+
+
+const certificateLinks = document.querySelectorAll(".cer");
+
+certificateLinks.forEach(link => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault(); 
+    const imgSrc = this.getAttribute("data-img"); 
+    modalImg.setAttribute("src", imgSrc);
+  });
+});
+
+
 
