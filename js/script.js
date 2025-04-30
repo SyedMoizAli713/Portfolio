@@ -1,5 +1,5 @@
 var typed = new Typed(".text", {
-    strings: ["Frontend Developer", "Web Developer", "Graphics Designer"],
+    strings: ["Frontend Developer", "Web Developer", "UI/UX Designer"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -31,20 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // Skills Section end
 
 //certifications
-
-//Script to change modal image
-
-  // const certificateImgs = document.querySelectorAll(".certificate-img");
-  // const modalImg = document.getElementById("modalImage");
-
-  // certificateImgs.forEach(img => {
-  //   img.addEventListener("click", function () {
-  //     const src = this.getAttribute("data-img");
-  //     modalImg.setAttribute("src", src);
-  //   });
-  // });
-
-
 const certificateImgs = document.querySelectorAll(".certificate-img");
 const modalImg = document.getElementById("modalImage");
 
@@ -69,3 +55,8 @@ certificateLinks.forEach(link => {
 
 
 
+$(".contact-form").on("submit", function(e) {
+  e.preventDefault();
+  alert("Form submitted successfully!");
+  $(this).trigger("reset");
+});
