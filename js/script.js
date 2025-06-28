@@ -60,3 +60,8 @@ $(".contact-form").on("submit", function(e) {
   alert("Form submitted successfully!");
   $(this).trigger("reset");
 });
+
+AOS.init({
+  offset:300,
+  duration: 1000,
+});

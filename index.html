@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syed Moiz Ali</title>
     <link rel="icon" href="img/fav.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -56,7 +57,7 @@
     <div class="col-lg-6 about-img img-fluid col-md-6 col-sm-12 mb-5">
 
     </div>
-    <div class="col-lg-6 about-text">
+    <div class="col-lg-6 about-text" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <h2 class="fw-semibold">About <span>ME</span></h2>
         <h4 class=".text-1">Full Stack Developer!</h4>
         <p style="text-align: justify;">I am a skilled web designer with over 1 years of experience in the industry.My passion lies in creating captivating web designs and implementing them through frontend development.I take Pride in staying up-to-date with current design trends and leveraging my creativity to produce visually appealing and user-freindly websites. Throughout my career,I have developed a deep understanding of user experience (UX) and User Interface (UI) principles.By Putting myself in the shoes of the ends-users,I strive to create intuitive and seamless browsing experiences. I believe that a well-designed website should not only look visuallyappealing but also provide a smooth and enjoyable interaction for visitors. When starting a new project, I thoroughly research and analyze the target audience and the client's specific requirements. This enables me to tailor my designs to meet their expectations and deliver a unique online presence that aligns with their brand identity ..</p>
@@ -72,14 +73,14 @@
     <h1 class="text-center mb-5 sub-title">My <span>Services</span></h1>
     <div class="row g-4">
       <div class="col-lg-4 col-md-6">
-        <div class="service-card p-4 text-center h-100">
+        <div class="service-card p-4 text-center h-100" data-aos="zoom-in" data-aos-duration="3000"data-aos-once="false"  >
           <i class="bx bx-code" style="color: #00eeff;"></i>
           <h3 class="fw-semibold mb-3">Web Development</h3>
           <p>I build fast, responsive, and modern websites using HTML, CSS & JavaScript — optimized for all devices and user experiences.</p>
           <a href="#" class="read mt-3">Learn More</a>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
+      <div class="col-lg-4 col-md-6" data-aos="flip-down" data-aos-duration="3000" data-aos-once="false">
         <div class="service-card p-4 text-center h-100">
           <i class="bx bx-crop" style="color: #00eeff;"></i>
           <h3 class="fw-semibold mb-3">UI/UX Design</h3>
@@ -87,7 +88,7 @@
           <a href="#" class="read mt-3">Learn More</a>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 mx-md-auto">
+      <div class="col-lg-4 col-md-6 mx-md-auto" data-aos="zoom-in-up" data-aos-once="false">
         <div class="service-card p-4 text-center h-100">
           <i class="bx bxl-apple" style="color: #00eeff;"></i>
           <h3 class="fw-semibold mb-3">App Design</h3>
@@ -108,7 +109,7 @@
       
       <div class="row">
         <!-- Left Side: Technical Skills -->
-        <div class="col-lg-6 title">
+        <div class="col-lg-6 title" data-aos="fade-up">
           <u style="color: #147bbc;"><h3 class="text-center heading mb-4 fw-bolder" style="color: #0ef;">Technical Skills</h3></u>
           
           <div class="skill mb-4">
@@ -178,7 +179,7 @@
         </div>
         
         <!-- Right Side: Professional Skills -->
-        <div class="col-lg-6 title1">
+        <div class="col-lg-6 title1" data-aos="fade-down">
           <u style="color: #147bbc;"><h3 class="text-center heading mb-4 fw-bolder" style="color: #0ef;">Professional Skills</h3></u>
           <div class="row text-center">
             <div class="col-6 mb-4">
@@ -236,7 +237,7 @@
       <h2 class="text-center mb-5 fw-bolder">My <span>Projects</span></h2>
       <div class="row g-4">
   
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left">
           <article class="project-card card1">
             <h4>Guarder</h4>
             <p>A responsive Project Guarder using HTML, CSS, and Bootstrap.</p>
@@ -244,7 +245,7 @@
           </article>
         </div>
   
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-up">
           <article class="project-card card2">
             <h4>GP Website</h4>
             <p>A responsive Project GP using HTML, CSS, and Bootstrap.</p>
@@ -252,11 +253,11 @@
           </article>
         </div>
   
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-right">
           <article class="project-card card3">
-            <h4>Encircle Website</h4>
+            <h4>Spice Delight Website</h4>
             <p>A responsive Project Encircle using HTML, CSS, and Bootstrap.</p>
-            <a href="https://maguard.netlify.app/" target="_blank" class="btn btn-info">View Project</a>
+            <a href="https://smresturant.netlify.app/" target="_blank" class="btn btn-info">View Project</a>
           </article>
         </div>
   
@@ -272,25 +273,47 @@
       <div class="row justify-content-center">
     
         <!-- Certificate 1 -->
-        <div class="col-lg-3 text-center mb-4">
-          <img src="certificates/html.jpg" alt="CSS Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/html.jpg">
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-right">
+          <img src="certificates/html.jpg" alt="HTML Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/html.jpg">
           <!-- <a href="" target="" class="btn btn-outline-info cer">View HTML Certificate</a> -->
           <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/html.jpg">View HTML Certificate</a>
 
         </div>
     
         <!-- Certificate 2 -->
-        <div class="col-lg-3 text-center mb-4">
-          <img src="certificates/css.jpg" alt="JavaScript Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/css.jpg">
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-up">
+          <img src="certificates/css.jpg" alt="CSS Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/css.jpg">
           <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/css.jpg">View CSS Certificate</a>
         </div>
         <!-- Certificate 3 -->
-        <div class="col-lg-3 text-center mb-4">
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-up">
+          <img src="certificates/js.png" alt="JS Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/js.png">
+          <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/js.png">View JS Certificate</a>
+        </div>
+        <!-- Certificate 4 -->
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-left">
+          <img src="certificates/sql.png" alt="SQL Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/sql.png">
+          <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/sql.png">View SQL Certificate</a>
+        </div>
+        <!-- Certificate 5 -->
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-right">
+          <img src="certificates/php.png" alt="PHP Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/php.png">
+          <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/php.png">View PHP Certificate</a>
+
+        </div>
+    
+        <!-- Certificate 6 -->
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-up">
+          <img src="certificates/Google AI Essentials.jpg" alt="AI Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/Google AI Essentials.jpg">
+          <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/Google AI Essentials.jpg">View AI Essentials Certificate</a>
+        </div>
+        <!-- Certificate 7 -->
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-up">
           <img src="certificates/Alison Certificate.jpg" alt="CSS Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/Alison Certificate.jpg">
           <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/Alison Certificate.jpg">View HTML and CSS Certificate</a>
         </div>
-        <!-- Certificate 4 -->
-        <div class="col-lg-3 text-center mb-4">
+        <!-- Certificate 8 -->
+        <div class="col-lg-3 text-center mb-4" data-aos="zoom-in-left">
           <img src="certificates/figma certificate.png" alt="JavaScript Certificate" class="img-fluid mb-3 certificate-img" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/figma certificate.png">
           <a href="#" class="btn btn-outline-info cer" data-bs-toggle="modal" data-bs-target="#certificateModal" data-img="certificates/figma certificate.png">View UI/UX Figma Certificate</a>
         </div>
@@ -316,7 +339,7 @@
   </section>
   <hr>
   <!-- Contact -->
-  <section id="contact" class="contact-section py-5">
+  <section id="contact" class="contact-section py-5"  data-aos="fade-down">
     <div class="container text-white">
       <h2 class="text-center mb-4 animate">Get in <span>Touch</span></h2>
   
@@ -346,8 +369,10 @@
           <a href="mailto:mmoizali63@gmail.com"><i class='bx bx-envelope'></i></a>
         </div>
       </div>
+      <!-- <button id="scrollBtn"><i class="fa-solid fa-arrow-up"></i></button> -->
     </div>
   </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
