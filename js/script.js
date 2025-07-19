@@ -55,11 +55,26 @@ certificateLinks.forEach(link => {
 
 
 
+// $(".contact-form").on("submit", function(e) {
+//   e.preventDefault();
+//   alert("Form submitted successfully!");
+//   $(this).trigger("reset");
+// });
+
 $(".contact-form").on("submit", function(e) {
   e.preventDefault();
-  alert("Form submitted successfully!");
+
+  Swal.fire({
+    icon: "success",
+    title: "Success!",
+    text: "Message sent successfully.",
+    showConfirmButton: false,
+    timer: 2000
+  });
+
   $(this).trigger("reset");
 });
+
 
 AOS.init({
   offset:300,
